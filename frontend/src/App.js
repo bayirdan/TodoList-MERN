@@ -1,5 +1,8 @@
 import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
 
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 import Header from "./components/Header";
 import Dashboard from "./pages/Dashboard";
 import Register from "./pages/Register";
@@ -17,6 +20,7 @@ function App() {
             <Route path="/register" element={<Register />} />
             <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
+          <ToastContainer />
         </div>
       </BrowserRouter>
     </>
