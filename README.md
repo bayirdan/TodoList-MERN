@@ -4,7 +4,9 @@
 
 This app is a 'To Do List' app with registration and login. Data is read from database, inserted, deleted and updated via API. Transactions are protected by the authentication token generated during registration and login.
 
-- Video
+
+![myList](https://user-images.githubusercontent.com/82668865/165477103-f3d5e1dc-51c5-46cd-af1f-f3253cda5bf6.gif)
+
 
 Password is hashed during registration with `bcryptjs`. The hashed password is compared to the original password at login.
 
